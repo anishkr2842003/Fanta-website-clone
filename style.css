@@ -1,0 +1,253 @@
+@font-face {
+    font-family: Product Sans;
+    src: url(font/Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: Product Sans B;
+    src: url(font/Product\ Sans\ Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Product Sans;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: orangered;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    /* background: yellow; */
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vw;
+    z-index: 10;
+}
+
+nav a, nav i{
+    font-size: 1.3vw;
+    color: #fff;
+}
+
+.cen-nav{
+    display: flex;
+    gap: 3vw;
+}
+
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg, rgb(255, 179, 0), rgb(255, 94, 0));
+}
+
+span{
+    font-size: 2vw;
+    font-family: Product Sans B;
+}
+
+#fanta{
+    width: 35%;
+    position: absolute;
+    z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5;
+}
+
+#orange_cut{
+    width: 20%;
+    position: absolute;
+    top: 5%;
+    left: 34%;
+    z-index: 1;
+    animation-name: orange_cut;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5;
+}
+
+@keyframes orange_cut{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#orange{
+    width: 18%;
+    position: absolute;
+    z-index: 3;
+    top: 60%;
+    right: 35%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5;
+}
+
+.one h1{
+    font-size: 25vw;
+    font-family: Product Sans B;
+    color: #fff;
+}
+
+#leaf1, #leaf2, #leaf3{
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5;
+}
+
+#leaf1{
+    width: 10%;
+    top: 20%;
+    left: 8%;
+}
+
+#leaf2{
+    width: 10%;
+    top: 60%;
+    right: 10%;
+}
+
+#leaf3{
+    width: 20%;
+    top: 4%;
+    right: 0;
+}
+
+.two{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left-two, .right-two{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    gap: 5vh;
+    background: #4d231c;
+}
+
+.left-two svg{
+    width: 90%;
+    margin-top: 50vh;
+    transform: rotateX(80deg);
+}
+
+.right-two h1{
+    color: #fff;
+    font-size: 5vw;
+}
+
+.right-two p{
+    font-size: 1.3vw;
+    color: #fff;
+    width: 80%;
+}
+
+.three{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    padding-top: 20vh;
+    background: linear-gradient(150deg, rgb(255, 179, 0), rgb(255, 94, 0));
+}
+
+.card{
+    position: relative;
+    width: 25vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 15vh;
+    gap: 2vh;
+    background: #fff;
+}
+
+.card h1{
+    margin-top: 40vh;
+    font-size: 3vw;
+}
+
+.card button{
+    font-size: 1.3vw;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    background-color: orange;
+    padding: 1vw 2vw;
+}
+
+#fanta_img{
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5;
+}
+
+#pineapple_cut{
+    position: absolute;
+    width: 80%;
+    top: -40%;
+    animation: orange_cut1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5;
+}
+
+#strawberry_cut{
+    position: absolute;
+    width: 80%;
+    top: -40%;
+    animation: orange_cut1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5;
+}
+
+@keyframes orange_cut1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
